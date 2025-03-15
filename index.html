@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Drop Alert - Coming Soon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: url("https://media.giphy.com/media/xuXzcHMkuwvf2/giphy.gif") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+            animation: glow 1.5s infinite alternate;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+            }
+            to {
+                text-shadow: 0 0 20px #ff9900, 0 0 30px #ff9900, 0 0 40px #ff9900;
+            }
+        }
+
+        .pokeball {
+            width: 50px;
+            height: 50px;
+            background: url("https://upload.wikimedia.org/wikipedia/commons/3/39/Pokeball.PNG") no-repeat center;
+            background-size: contain;
+            position: absolute;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>🚀 Pokémon Drop Alert - Coming Soon! 🚀</h1>
+    <div class="container">
+        <p>Stiamo lavorando per offrirti il miglior monitoraggio dei drop Pokémon!<br>
+        Seguici per aggiornamenti!</p>
+    </div>
+
+    <div class="pokeball" style="top: 20%; left: 10%;"></div>
+    <div class="pokeball" style="top: 40%; left: 80%;"></div>
+    <div class="pokeball" style="top: 70%; left: 50%;"></div>
+</body>
+</html>
