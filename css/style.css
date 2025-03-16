@@ -8,6 +8,12 @@ body {
     overflow: hidden;
 }
 
+html, body {
+    overflow-x: hidden; /* Evita lo scrolling orizzontale */
+    max-width: 100%;
+}
+
+
 /* Contenitore */
 .container {
     margin-top: 100px;
@@ -71,5 +77,34 @@ p {
     }
     50% {
         transform: translate(-50%, -30px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Riduciamo la larghezza */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Titolo più piccolo su mobile */
+    }
+
+    p {
+        font-size: 1rem; /* Testo più piccolo */
+    }
+
+    .social-icons img {
+        width: 40px; /* Icone più piccole */
+        height: 40px;
+    }
+
+    .pokeball {
+        width: 40px; /* Pokéball più piccole */
+        height: 40px;
+        left: auto; /* Evitiamo posizionamenti assoluti su mobile */
+        right: auto;
+        top: auto;
+
     }
 }
