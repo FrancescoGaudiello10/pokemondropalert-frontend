@@ -4,107 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokémon Drop Alert - Coming Soon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background: url("https://media.giphy.com/media/xuXzcHMkuwvf2/giphy.gif") no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-        }
-
-        h1 {
-            font-size: 3rem;
-            color: #ffcc00;
-            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
-            animation: glow 1.5s infinite alternate;
-        }
-
-        p {
-            font-size: 1.5rem;
-            color: #ffffff;
-            background: rgba(0, 0, 0, 0.5);
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: 10px;
-            margin-top: 15px;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        @keyframes glow {
-            from {
-                text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
-            }
-            to {
-                text-shadow: 0 0 20px #ff9900, 0 0 30px #ff9900, 0 0 40px #ff9900;
-            }
-        }
-
-        .pokeball {
-            width: 50px;
-            height: 50px;
-            background: url("https://upload.wikimedia.org/wikipedia/commons/3/39/Pokeball.PNG") no-repeat center;
-            background-size: contain;
-            position: absolute;
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-
-        .social-icons {
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            display: inline-block;
-            margin: 0 15px;
-            transition: transform 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            transform: scale(1.2);
-        }
-
-        .social-icons img {
-            width: 50px;
-            height: 50px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
-    <h1>🚀 Pokémon Drop Alert - Coming Soon! 🚀</h1>
     <div class="container">
-        <p>Stiamo lavorando per offrirti il miglior monitoraggio dei drop Pokémon!<br>
-        Seguici per aggiornamenti!</p>
+        <h1>🚀 Pokémon Drop Alert - Coming Soon! 🚀</h1>
+        <p>Stiamo lavorando per offrirti il miglior monitoraggio dei drop Pokémon!<br>Seguici per aggiornamenti!</p>
 
-        <!-- Sezione Social -->
         <div class="social-icons">
             <a href="https://www.instagram.com/pokemondropalert/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                <img src="assets/images/instagram.png" alt="Instagram">
             </a>
             <a href="https://t.me/pokemon_alert_24_bot" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+                <img src="assets/images/telegram.png" alt="Telegram">
             </a>
         </div>
-    </div>
 
-    <!-- Pokéball animate -->
-    <div class="pokeball" style="top: 20%; left: 10%;"></div>
-    <div class="pokeball" style="top: 40%; left: 80%;"></div>
-    <div class="pokeball" style="top: 70%; left: 50%;"></div>
+        <!-- Pokéball animate -->
+        <div class="pokeball"></div>
+    </div>
 </body>
 </html>
